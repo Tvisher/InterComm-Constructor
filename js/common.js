@@ -97,3 +97,20 @@ $(document).ready(function () {
         offset: offset,
     });
 });
+
+
+const modalEx = document.querySelector('.modal-ex');
+
+
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.closest('.price')) {
+        modalEx.classList.add('show');
+        return;
+    }
+
+    if (target.closest('.modal-ex') && !target.closest('.modal-ex__content')) {
+        modalEx.classList.remove('show');
+        return;
+    }
+})
