@@ -695,22 +695,26 @@ ul {
 	.price {
 		padding: fluid(8, 12) fluid(14, 22) fluid(8, 16);
 		color: #FFF;
-		line-height: normal;
 		border-radius: fluid(15, 30);
 		font-weight: 600;
 		font-size: fluid(20, 45);
-		font-style: normal;
-		line-height: normal;
+		line-height: 100%;
 		text-align: center;
+		display: flex;
+		justify-content: center;
+		gap: 5px;
+		align-items: baseline;
 
 		&:not(:last-child) {
 			margin-bottom: fluid(10, 14);
 		}
 
 		span {
+			display: block;
 			font-size: fluid(16, 25);
 			display: inline-block;
 			font-weight: 500;
+			line-height: 100%;
 		}
 	}
 }

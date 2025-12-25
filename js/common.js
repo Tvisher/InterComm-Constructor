@@ -39,9 +39,8 @@ $(document).ready(function () {
         tariffSlider = new Swiper('.tariff_slider', {
             slidesPerView: 'auto',
             spaceBetween: 14,
-
             centeredSlides: isMobile,
-            centeredSlidesBounds: isMobile,
+            // centeredSlidesBounds: isMobile,
             initialSlide: isMobile ? 1 : 0,
 
             pagination: {

@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="vendors/animate/aos.min.css" />
     <link rel="stylesheet" href="vendors/plyr/plyr.css" />
-    <link rel="stylesheet" href="css/common.css?1" />
+    <link rel="stylesheet" href="css/common.min.css?1" />
 </head>
 
 <body>
@@ -38,9 +38,9 @@
             <div class='img_bg img_bg_1'>
                 <div class='parallax' data-aos="fade-in"><img data-depth="0.1" src="imgs/img_bg_1.png" alt=""></div>
             </div>
-            <div class='logo' data-aos="fade-up">
+            <a href="https://vnutricom.ru/" target="_blank" class='logo' data-aos="fade-up">
                 <img src="imgs/logo.svg" alt="">
-            </div>
+            </a>
         </div>
     </header>
     <main>
@@ -67,7 +67,7 @@
                 </ul>
             </div>
         </section>
-        <section class='tariff_section'>
+        <section id="tariff_section" class='tariff_section'>
             <div class="container">
                 <div class='border_text' data-aos="fade-up" data-aos-delay="500">
                     Конструируйте свой будущий опыт – выбирайте подходящий тариф уже сейчас!
@@ -338,7 +338,7 @@
                 <h2 data-aos="fade-up">Как это было в 2025 </h2>
                 <div data-aos="fade-in">
                     <video class="player_video" controls data-poster="imgs/video-poster.jpg">
-                        <source src="imgs/video.mp4" type="video/mp4" />
+                        <source src="./files/ik.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>
@@ -414,7 +414,7 @@
                     </div>
                 </div>
                 <div class='footer_col'>
-                    <a href="#" class='btn'>Принять участие</a>
+                    <a href="#tariff_section" class='btn'>Принять участие</a>
                 </div>
             </div>
         </div>
