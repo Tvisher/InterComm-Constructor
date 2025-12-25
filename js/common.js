@@ -34,15 +34,15 @@ $(document).ready(function () {
     function initTariffSlider() {
         if (tariffSlider) tariffSlider.destroy(true, true);
 
-        const isMobile = window.innerWidth < 576;
+        const isMobile = window.innerWidth < 800;
 
         tariffSlider = new Swiper('.tariff_slider', {
             slidesPerView: 'auto',
             spaceBetween: 14,
             centeredSlides: isMobile,
-            // centeredSlidesBounds: isMobile,
-            initialSlide: isMobile ? 1 : 0,
-
+            centeredSlidesBounds: isMobile,
+            initialSlide: 1,
+            ResizeObserver: false,
             pagination: {
                 el: '.swiper-pagination',
             },
@@ -64,7 +64,7 @@ $(document).ready(function () {
         });
     }
 
-    window.addEventListener('resize', initTariffSlider);
+    // window.addEventListener('resize', initTariffSlider);
     initTariffSlider();
 
 
