@@ -640,6 +640,10 @@ ul {
 }
 
 @media screen and (min-width:576px) {
+	.tariff_slider .price {
+		gap: 5px;
+	}
+
 	.tariff_item_double {
 		display: none !important;
 	}
@@ -702,7 +706,7 @@ ul {
 		text-align: center;
 		display: flex;
 		justify-content: center;
-		gap: 5px;
+		gap: 10px;
 		align-items: baseline;
 
 		&:not(:last-child) {
@@ -991,6 +995,10 @@ ul {
 }
 
 @media screen and (max-width:575px) {
+	.tariff_slider .price {
+		gap: 5px !important;
+	}
+
 
 	// .faq_item .question {
 	// 	border-radius: 15px;
