@@ -804,6 +804,7 @@ ul {
 	}
 
 	.price {
+		cursor: pointer;
 		padding: fluid(8, 12) fluid(14, 22) fluid(8, 12);
 		color: #FFF;
 		border-radius: fluid(15, 30);
@@ -815,6 +816,7 @@ ul {
 		justify-content: center;
 		gap: 10px;
 		align-items: baseline;
+
 
 		&:not(:last-child) {
 			margin-bottom: fluid(10, 14);
